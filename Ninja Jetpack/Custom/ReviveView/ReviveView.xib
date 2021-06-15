@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="zorque.ttf">
+            <string>Zorque-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviveView" customModule="Hyperion" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="reZ-Kd-75N"/>
+                <outlet property="reviveImage" destination="B50-Kv-ib6" id="z67-LJ-Qv3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="revive" translatesAutoresizingMaskIntoConstraints="NO" id="B50-Kv-ib6">
+                    <rect key="frame" x="15" y="10" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="LX6-aF-6B3"/>
+                        <constraint firstAttribute="height" constant="100" id="zoh-eQ-Jnf"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVJ-Iy-LUF">
+                    <rect key="frame" x="37.5" y="158" width="55" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0a-QL-I2r">
+                            <rect key="frame" x="0.0" y="1" width="33" height="18"/>
+                            <fontDescription key="fontDescription" name="Zorque-Regular" family="Zorque" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gold_1" translatesAutoresizingMaskIntoConstraints="NO" id="Ggu-2T-gdJ">
+                            <rect key="frame" x="38" y="2.5" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="4Bl-7T-Dpi"/>
+                                <constraint firstAttribute="width" constant="15" id="pCp-VP-UMm"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="1u6-Pc-hwV"/>
+                        <constraint firstItem="Ggu-2T-gdJ" firstAttribute="centerY" secondItem="DVJ-Iy-LUF" secondAttribute="centerY" id="Bxm-fb-GDr"/>
+                        <constraint firstItem="Ggu-2T-gdJ" firstAttribute="leading" secondItem="X0a-QL-I2r" secondAttribute="trailing" constant="5" id="C2D-7E-l6a"/>
+                        <constraint firstItem="X0a-QL-I2r" firstAttribute="centerY" secondItem="DVJ-Iy-LUF" secondAttribute="centerY" id="b3e-4W-W2r"/>
+                        <constraint firstItem="X0a-QL-I2r" firstAttribute="leading" secondItem="DVJ-Iy-LUF" secondAttribute="leading" id="hAu-R5-5Br"/>
+                        <constraint firstAttribute="height" constant="20" id="jkn-lq-YfG"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tco-ln-zbM">
+                    <rect key="frame" x="38" y="135" width="54" height="18"/>
+                    <fontDescription key="fontDescription" name="Zorque-Regular" family="Zorque" pointSize="15"/>
+                    <color key="textColor" systemColor="systemPinkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN2-Lg-Rz9">
+                    <rect key="frame" x="100" y="-20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Kvf-dE-dYo"/>
+                        <constraint firstAttribute="width" constant="50" id="bWW-Wd-kbE"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="RII-17-QaX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoI-Nx-Ani" customClass="MenuButton" customModule="Hyperion" customModuleProvider="target">
+                    <rect key="frame" x="20" y="183" width="90" height="30"/>
+                    <state key="normal" title="Buy"/>
+                    <connections>
+                        <action selector="buyAction:" destination="-1" eventType="touchUpInside" id="cIE-xe-2md"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZoI-Nx-Ani" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="07Q-SY-CkM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZoI-Nx-Ani" secondAttribute="trailing" constant="20" id="2LB-d4-2gg"/>
+                <constraint firstItem="Tco-ln-zbM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="80t-KO-FE4"/>
+                <constraint firstItem="B50-Kv-ib6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CEU-Y9-uh2"/>
+                <constraint firstItem="Tco-ln-zbM" firstAttribute="top" secondItem="B50-Kv-ib6" secondAttribute="bottom" constant="25" id="HUJ-BU-HRj"/>
+                <constraint firstItem="bN2-Lg-Rz9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-20" id="L5Y-X7-389"/>
+                <constraint firstItem="ZoI-Nx-Ani" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LHU-ET-HCI"/>
+                <constraint firstItem="B50-Kv-ib6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="LgA-s6-7tV"/>
+                <constraint firstAttribute="trailing" secondItem="bN2-Lg-Rz9" secondAttribute="trailing" constant="-20" id="V37-gS-ulT"/>
+                <constraint firstItem="DVJ-Iy-LUF" firstAttribute="top" secondItem="Tco-ln-zbM" secondAttribute="bottom" constant="5" id="Vo6-ze-HbH"/>
+                <constraint firstItem="ZoI-Nx-Ani" firstAttribute="top" secondItem="DVJ-Iy-LUF" secondAttribute="bottom" constant="5" id="dYJ-Vd-kgp"/>
+                <constraint firstItem="DVJ-Iy-LUF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="scD-xv-HvQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-27.199999999999999" y="-91.754122938530742"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Gold_1" width="563" height="564"/>
+        <image name="close" width="12" height="12"/>
+        <image name="revive" width="100" height="100"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

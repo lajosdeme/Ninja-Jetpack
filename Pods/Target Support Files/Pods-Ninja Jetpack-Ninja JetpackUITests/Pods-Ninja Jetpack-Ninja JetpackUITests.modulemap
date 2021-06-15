@@ -1,0 +1,6 @@
+framework module Pods_Ninja_Jetpack_Ninja_JetpackUITests {
+  umbrella header "Pods-Ninja Jetpack-Ninja JetpackUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

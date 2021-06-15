@@ -1,0 +1,6 @@
+framework module Pods_Ninja_Jetpack {
+  umbrella header "Pods-Ninja Jetpack-umbrella.h"
+
+  export *
+  module * { export * }
+}
